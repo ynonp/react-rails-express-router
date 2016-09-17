@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   layout 'application'
-  respond_to :html, :json
 
   def index
     @appstate = {
