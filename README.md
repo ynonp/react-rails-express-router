@@ -4,7 +4,7 @@
 Express router is a stable, simpler alternative to react-router. Integrating it with react-on-rails and we have a working, no fuss client side routing.
 
 ## How?
-The latest express router is available as a standalone module in pillarjs/router, and was already wrapped for browser usage by @wesleytodd in module wesleytodd/nighthawk.
+The latest express router is available as a standalone module in pillarjs/router, and was already wrapped for browser use by @wesleytodd in module wesleytodd/nighthawk.
 
 To get them working with react-on-rails this we need to create a separate server/client webpack bundles, server loads pillarjs/router and client loads wesleytodd/nighthawk router. In this demo app they are saved as `webpack.config.js` and `webpack.server.config.js`
 
