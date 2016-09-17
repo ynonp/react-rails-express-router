@@ -4,11 +4,21 @@
     <title>RouterDemo</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+<style>
+nav a {
+  padding: 10px;
+  background: #a8a8a8;
+  margin-right: 10px;
+}
+
+</style>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="app">
+      <%= react_component("HelloWorldApp", props: @appstate, prerender: true) %>
+    </div>
   </body>
 </html>
